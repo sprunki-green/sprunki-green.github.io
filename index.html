@@ -8,6 +8,24 @@
       name="description"
       content="Play 10+ Sprunki Games & More Unblocked Games. Play Now !"
     />
+    <link rel="icon" type="image/png" href="./S.png" />
+    <meta property="og:image" content="./Sprunki.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Q29MMYXXFW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Q29MMYXXFW");
+    </script>
     <style>
       :root {
         --neon-primary: #00f3ff;
@@ -54,12 +72,24 @@
       }
 
       .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         font-size: 2rem;
         font-weight: 700;
+      }
+
+      .logo span {
         background: var(--gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: glow 3s ease-in-out infinite;
+      }
+
+      .nav-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
       }
 
       /* Hero Section */
@@ -175,7 +205,7 @@
 
       .game-image {
         width: 100%;
-        height: 200px;
+        height: 280px;
         object-fit: cover;
       }
 
@@ -242,12 +272,38 @@
           font-size: 2rem;
         }
       }
+
+      .keywords-section {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 0;
+      }
+
+      .keyword-tag {
+        padding: 0.5rem 1.5rem;
+        background: var(--card-bg);
+        border: 1px solid var(--neon-primary);
+        border-radius: 25px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .keyword-tag:hover {
+        background: var(--gradient);
+        transform: translateY(-3px);
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+      }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-content">
-        <div class="logo">SPRUNKI GREEN</div>
+        <div class="logo">
+          <span>SPRUNKI GREEN</span>
+        </div>
         <div class="nav-links">
           <!-- Add navigation links here -->
         </div>
@@ -302,7 +358,15 @@
               session becomes unique with this special companion, making your
               rhythm journey unforgettable!
             </p>
-            <a href="#games" class="play-btn">Browse Games</a>
+            <div class="keywords-section">
+              <span class="keyword-tag">Sprunki Green</span>
+              <span class="keyword-tag">Sprunki Challenge</span>
+              <span class="keyword-tag">Sprunki Games</span>
+              <a href="/games/sprunki/index.html" class="keyword-tag"
+                >Sprunki</a
+              >
+            </div>
+            <a href="#games" class="play-btn">Play Games</a>
           </div>
         </div>
       </div>
@@ -319,9 +383,9 @@
             class="game-image"
           />
           <div class="game-info">
-            <h3 class="game-title">Cyber Strike</h3>
+            <h3 class="game-title">Sprunki</h3>
             <p class="game-desc">
-              Experience the future of combat in this action-packed adventure.
+              Sprunki Challenge, Sprunki Green, Sprunki Games, Sprunki
             </p>
             <a href="/games/sprunki/index.html" class="play-btn">Play Now</a>
           </div>
@@ -329,38 +393,93 @@
 
         <!-- Game Card 2 -->
         <div class="game-card">
-          <img src="game2.jpg" alt="Dragon Quest" class="game-image" />
+          <img
+            src="/games/sprunki-challenge/logo.png"
+            alt="Sprunki Challenge"
+            class="game-image"
+          />
           <div class="game-info">
-            <h3 class="game-title">Dragon Quest</h3>
+            <h3 class="game-title">Sprunki Challenge</h3>
             <p class="game-desc">
-              Embark on an epic journey through mystical realms and battle
-              fierce dragons.
+              Sprunki Challenge, Sprunki Green, Sprunki Games, Sprunki
             </p>
-            <a href="#" class="play-btn">Play Now</a>
+            <a href="/games/sprunki-challenge/index.html" class="play-btn"
+              >Play Now</a
+            >
           </div>
         </div>
 
         <!-- Game Card 3 -->
         <div class="game-card">
-          <img src="game3.jpg" alt="Speed Racing" class="game-image" />
+          <img
+            src="/games/friday-night-sprunki/logo.png"
+            alt="Friday Night Sprunki"
+            class="game-image"
+          />
           <div class="game-info">
-            <h3 class="game-title">Speed Racing</h3>
+            <h3 class="game-title">Friday Night Sprunki</h3>
             <p class="game-desc">
-              Race through challenging tracks in high-performance supercars.
+              Friday Night Sprunki, Sprunki Green, Sprunki Games, Sprunki
             </p>
-            <a href="#" class="play-btn">Play Now</a>
+            <a href="/games/friday-night-sprunki/index.html" class="play-btn"
+              >Play Now</a
+            >
           </div>
         </div>
 
         <!-- Game Card 4 -->
         <div class="game-card">
-          <img src="game4.jpg" alt="Zombie Survival" class="game-image" />
+          <img
+            src="/games/sprunki-find-the-differences/logo.png"
+            alt="Sprunki Find The Differences"
+            class="game-image"
+          />
           <div class="game-info">
-            <h3 class="game-title">Zombie Survival</h3>
+            <h3 class="game-title">Sprunki Find The Differences</h3>
             <p class="game-desc">
-              Survive in a post-apocalyptic world filled with the walking dead.
+              Sprunki Find The Differences, Sprunki Green, Sprunki Games,
+              Sprunki
             </p>
-            <a href="#" class="play-btn">Play Now</a>
+            <a
+              href="/games/sprunki-find-the-differences/index.html"
+              class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Game Card 5 -->
+        <div class="game-card">
+          <img
+            src="/games/sprunki-popit/logo.png"
+            alt="Sprunki Popit"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Sprunki Popit</h3>
+            <p class="game-desc">
+              Sprunki Popit, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/sprunki-popit/index.html" class="play-btn"
+              >Play Now</a
+            >
+          </div>
+        </div>
+        <!-- Game Card 6 -->
+        <div class="game-card">
+          <img
+            src="/games/super-sprunki-clicker/logo.png"
+            alt="Super Sprunki Clicker"
+            class="game-image"
+          />
+          <div class="game-info">
+            <h3 class="game-title">Super Sprunki Clicker</h3>
+            <p class="game-desc">
+              Super Sprunki Clicker, Sprunki Green, Sprunki Games, Sprunki
+            </p>
+            <a href="/games/super-sprunki-clicker/index.html" class="play-btn"
+              >Play Now</a
+            >
           </div>
         </div>
       </div>
